@@ -9,12 +9,14 @@ import {DialogComponent} from './dialog/dialog.component';
 import {MaterialModule} from "./material/material.module";
 import {ToastrModule} from "ngx-toastr";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AloComponent } from './alo/alo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    DialogComponent
+    DialogComponent,
+    AloComponent
   ],
   imports: [
     BrowserModule,
