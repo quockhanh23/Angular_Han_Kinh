@@ -8,6 +8,7 @@ import {TestComponent} from './test/test.component';
 import {DialogComponent} from './dialog/dialog.component';
 import {MaterialModule} from "./material/material.module";
 import {ToastrModule} from "ngx-toastr";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ToastrModule} from "ngx-toastr";
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
