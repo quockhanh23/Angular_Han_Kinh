@@ -6,19 +6,27 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material/material.module";
 import {ToastrModule} from "ngx-toastr";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HomePageComponent } from './home-page/home-page.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    ToastrModule.forRoot(),
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        ToastrModule.forRoot(),
+        NgbModule,
+        MatGridListModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
