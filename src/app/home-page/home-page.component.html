@@ -4,42 +4,102 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon class="a1 a2" matTooltip="Xem dịch vụ" [matMenuTriggerFor]="menu">menu</mat-icon>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>Hàn Kính</button>
-        <button mat-menu-item>Đánh bóng kính</button>
+        <button (click)="glassWeldingType()" mat-menu-item>Hàn Kính</button>
+        <button (click)="glassPolishingType()" mat-menu-item>Đánh bóng kính</button>
+        <button (click)="changeGlassesType()" mat-menu-item>Thay kính</button>
       </mat-menu>
     </button>
     <div class="col-6">Liên hệ: 0983239808</div>
   </mat-toolbar>
 </div>
-<div class="row" style="background-color: whitesmoke">
 
-  <div class="col-12">
+<div class="row" style="background-color: whitesmoke">
+  <div class="col-12" *ngIf="glassPolishing && !changeGlasses && !glassWelding">
     <ngb-carousel>
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-          <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
+          <img class="imageFix" src="../../assets/image/dbk1.jpg">
         </div>
         <div class="carousel-caption">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Hình ảnh trước và sau khi đánh bóng kính</p>
         </div>
       </ng-template>
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-          <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
+          <img class="imageFix" src="../../assets/image/dbk2.jpg">
         </div>
         <div class="carousel-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
         </div>
       </ng-template>
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
-          <img class="imageFix" src="../../assets/image/91dcfd7e-41df-4b38-b00a-da6ec559114b.jpg">
+          <img class="imageFix" src="../../assets/image/dbk3.jpg">
         </div>
         <div class="carousel-caption">
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/dbk4.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/dbk5.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/dbk6.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/dbk7.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/dbk8.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh đánh bóng kính</h3>
+          <p>Đang được đánh bóng.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+  <div class="col-12" *ngIf="!glassPolishing && changeGlasses && !glassWelding">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/tk1.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Ảnh thay kính</h3>
+          <p>Kính đang được thay thế</p>
         </div>
       </ng-template>
     </ngb-carousel>
