@@ -1,53 +1,46 @@
-<p>
+<div>
   <mat-toolbar color="primary">
+    <span class="a1 a2" matTooltip="Xem dịch vụ"  [matMenuTriggerFor]="menu">Huy Cường Auto</span>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+      <mat-icon class="a1 a2" matTooltip="Xem dịch vụ" [matMenuTriggerFor]="menu">menu</mat-icon>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Hàn Kính</button>
+        <button mat-menu-item>Đánh bóng kính</button>
+      </mat-menu>
     </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
+    <div class="col-6">Liên hệ: 0983239808</div>
   </mat-toolbar>
-</p>
-<div class="container">
-  <div class="row">
-
-    <div class="col-12">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
-          </div>
-          <div class="carousel-caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
-          </div>
-          <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img class="imageFix" src="../../assets/image/91dcfd7e-41df-4b38-b00a-da6ec559114b.jpg">
-          </div>
-          <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    </div>
-
+</div>
+<div class="row">
+  <div class="col-12">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/5a6a343b-0e04-4a71-97f2-d3b2b2385927.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="imageFix" src="../../assets/image/91dcfd7e-41df-4b38-b00a-da6ec559114b.jpg">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
   </div>
-
 </div>
