@@ -6,7 +6,7 @@ import {GlassWeldingComponent} from "./glass-welding/glass-welding.component";
 
 const routes: Routes = [
   {
-    path: '', component: GlassPolishingComponent,
+    path: '', component: GlassWeldingComponent,
   },
   {
     path: 'glassPolishing', component: GlassPolishingComponent,
