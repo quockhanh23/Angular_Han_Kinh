@@ -13,13 +13,19 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {FormsModule} from "@angular/forms";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {GlassPolishingComponent} from './glass-polishing/glass-polishing.component';
+import {ChangeGlassesComponent} from './change-glasses/change-glasses.component';
+import {GlassWeldingComponent} from './glass-welding/glass-welding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    GlassPolishingComponent,
+    ChangeGlassesComponent,
+    GlassWeldingComponent
   ],
   imports: [
     BrowserModule,

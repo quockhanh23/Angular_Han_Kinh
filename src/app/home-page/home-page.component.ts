@@ -7,32 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  glassPolishing = false;
-  changeGlasses = false;
-  glassWelding = false;
-
   constructor() {
-    this.glassPolishing = true;
   }
 
   ngOnInit(): void {
-  }
-
-  glassPolishingType() {
-    this.glassPolishing = true
-    this.changeGlasses = false
-    this.glassWelding = false
-  }
-
-  changeGlassesType() {
-    this.glassPolishing = false
-    this.changeGlasses = true
-    this.glassWelding = false
-  }
-
-  glassWeldingType() {
-    this.glassPolishing = false
-    this.changeGlasses = false
-    this.glassWelding = true
   }
 }
