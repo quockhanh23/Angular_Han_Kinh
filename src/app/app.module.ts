@@ -17,6 +17,8 @@ import {GlassPolishingComponent} from './glass-polishing/glass-polishing.compone
 import {ChangeGlassesComponent} from './change-glasses/change-glasses.component';
 import {GlassWeldingComponent} from './glass-welding/glass-welding.component';
 import {FlatteryComponent} from './flattery/flattery.component';
+import {IntroComponent} from './intro/intro.component';
+import {StainRemoverComponent} from './stain-remover/stain-remover.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {FlatteryComponent} from './flattery/flattery.component';
     GlassPolishingComponent,
     ChangeGlassesComponent,
     GlassWeldingComponent,
-    FlatteryComponent
+    FlatteryComponent,
+    IntroComponent,
+    StainRemoverComponent
   ],
   imports: [
     BrowserModule,

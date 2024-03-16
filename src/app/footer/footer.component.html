@@ -20,10 +20,15 @@
             <hr>
             <h3 class="f-title f_600 t_color f_size_18">Dịch vụ</h3>
             <ul class="list-unstyled f_list">
-              <li><a style="font-size: 17px" [routerLink]="['/glassWelding']">Hàn Kính</a></li>
-              <li><a style="font-size: 17px" [routerLink]="['/glassPolishing']">Đánh Bóng kính</a></li>
-              <li><a style="font-size: 17px" [routerLink]="['/changeGlasses']">Thay Kính</a></li>
-              <li><a style="font-size: 17px" [routerLink]="['/']">Chăm Sóc Xe</a></li>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/glassWelding']">Giới thiệu</a></li>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/glassWelding']">Hàn kính</a></li>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/glassPolishing']">Đánh bóng
+                kính</a></li>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/changeGlasses']">Thay kính</a>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/stainRemover']">Tẩy ố kính ô
+                tô</a>
+              </li>
+              <li><a style="font-size: 17px" (click)="scrollToTop()" [routerLink]="['/']">Chăm sóc xe</a></li>
             </ul>
           </div>
         </div>
