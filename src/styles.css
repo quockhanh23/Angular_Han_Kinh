@@ -26,3 +26,21 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.imageFix {
+  width: 100%;
+  height: auto
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.titleText {
+  margin-top: 10px !important;
+}

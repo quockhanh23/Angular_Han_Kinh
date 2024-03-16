@@ -16,6 +16,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {GlassPolishingComponent} from './glass-polishing/glass-polishing.component';
 import {ChangeGlassesComponent} from './change-glasses/change-glasses.component';
 import {GlassWeldingComponent} from './glass-welding/glass-welding.component';
+import { FlatteryComponent } from './flattery/flattery.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {GlassWeldingComponent} from './glass-welding/glass-welding.component';
     HeaderComponent,
     GlassPolishingComponent,
     ChangeGlassesComponent,
-    GlassWeldingComponent
+    GlassWeldingComponent,
+    FlatteryComponent
   ],
   imports: [
     BrowserModule,
