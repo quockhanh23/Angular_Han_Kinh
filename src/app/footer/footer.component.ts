@@ -1,4 +1,4 @@
-import {Component, OnInit, Renderer2} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,15 +7,13 @@ import {Component, OnInit, Renderer2} from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    window.scrollTo(0, 0);
   }
 }

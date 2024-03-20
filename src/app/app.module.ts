@@ -43,7 +43,7 @@ import {StainRemoverComponent} from './stain-remover/stain-remover.component';
     MatGridListModule,
     FormsModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
