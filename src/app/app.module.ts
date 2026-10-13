@@ -19,6 +19,7 @@ import {GlassWeldingComponent} from './glass-welding/glass-welding.component';
 import {FlatteryComponent} from './flattery/flattery.component';
 import {IntroComponent} from './intro/intro.component';
 import {StainRemoverComponent} from './stain-remover/stain-remover.component';
+import { CeramicComponent } from './ceramic/ceramic.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {StainRemoverComponent} from './stain-remover/stain-remover.component';
     GlassWeldingComponent,
     FlatteryComponent,
     IntroComponent,
-    StainRemoverComponent
+    StainRemoverComponent,
+    CeramicComponent
   ],
   imports: [
     BrowserModule,

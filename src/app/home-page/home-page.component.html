@@ -1,6 +1,7 @@
 <div>
   <mat-toolbar color="primary">
-    <span class="a1 a2 " matTooltip="Xem dịch vụ" [matMenuTriggerFor]="menu">Huy Cường Auto</span>
+    <span style="margin-right: 10px" class="a1 a2 " matTooltip="Xem dịch vụ"
+          [matMenuTriggerFor]="menu">Huy Cường Auto</span>
     <button mat-icon-button class="example-icon buttonFlashing" aria-label="Example icon-button with menu icon">
       <mat-icon class="a1 a2" matTooltip="Xem dịch vụ" [matMenuTriggerFor]="menu">menu</mat-icon>
       <mat-menu #menu="matMenu">
@@ -9,6 +10,7 @@
         <button style="font-size: 17px" [routerLink]="['/glassPolishing']" mat-menu-item>Đánh bóng kính</button>
         <button style="font-size: 17px" [routerLink]="['/changeGlasses']" mat-menu-item>Thay kính</button>
         <button style="font-size: 17px" [routerLink]="['/stainRemover']" mat-menu-item>Tẩy ố kính ô tô</button>
+        <button style="font-size: 17px" [routerLink]="['/coverCeramic']" mat-menu-item>Phủ Ceramic</button>
       </mat-menu>
     </button>
     <div class="col-6">Liên hệ: <a style="color: white" href="tel:0983239808">0983239808</a></div>

@@ -5,6 +5,7 @@ import {ChangeGlassesComponent} from "./change-glasses/change-glasses.component"
 import {GlassWeldingComponent} from "./glass-welding/glass-welding.component";
 import {StainRemoverComponent} from "./stain-remover/stain-remover.component";
 import {IntroComponent} from "./intro/intro.component";
+import {CeramicComponent} from "./ceramic/ceramic.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: 'stainRemover', component: StainRemoverComponent,
+  },
+  {
+    path: 'coverCeramic', component: CeramicComponent,
   },
   {
     path: 'intro', component: IntroComponent,
